@@ -129,7 +129,7 @@ didUserLike() {
           { data.comments.map((comment, i) => {
     // i is comment's index in comments array
     return (
-      <Comment key={i} author={comment.author} postDate={comment.postDate}>{comment.contents}</Comment>
+      <Comment key={i} comIndex={i} author={comment.author} data ={comment} feedIndex ={this.state._id} postDate={comment.postDate}>{comment.contents}</Comment>
     );
     })
  }
